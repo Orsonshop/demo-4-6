@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<table th:each="i:${s}">
+
+    <tr >
+        <td>学生Id</td>
+        <td th:text="${i.getid(}"></td>
+    </tr>
+
+    <tr >
+        <td>学生姓名</td>
+        <td th:text="${i.getname()}"></td>
+
+    </tr>
+    <tr >
+        <td>学生分数</td>
+        <td th:text="${i.getnumber()}"></td>
+
+    </tr>
+    <tr >
+        <td>教师建议</td>
+        <td th:text="${i.getfactory}"></td>
+    </tr>
+    <tr >
+        <td>教师建议</td>
+        <td th:text="${i.gettime}"></td>
+    </tr>
+    <tr >
+        <td>教师建议</td>
+        <td th:text="${i.getprice}"></td>
+    </tr>
+</table>
+</body>
+</html>
