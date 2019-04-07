@@ -38,7 +38,7 @@ public class PurchaseController {
     public String updatePurchase(@PathVariable Integer id,@PathVariable String name, @PathVariable int number,@PathVariable double price,@PathVariable String factory,@PathVariable String time){
         return purchaseService.updatePurchase(id,name,number,price,factory,time);
     }
-
+//
     @DeleteMapping("/delete/{id}")
     public void   deletePurchase(@PathVariable Integer id) {
         purchaseService.deleteById(id);
